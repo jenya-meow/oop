@@ -120,6 +120,11 @@ int main() {
     for(int i = 0; i < n; i++){
         delete [] array[i];    
     }
+
+    for(int i = 0; i < n; i++){
+        delete [] sec[i];    
+    }
+    
     
     system("pause");
     return 0;

@@ -2,6 +2,7 @@
 #include "headers/point.h"
 #include "headers/line.h"
 #include "headers/tringl.h"
+#include "headers/move.h"
 
 #define FOR(_x, _n) for(int _i = _x; _i < _n; _i++)
 
@@ -29,19 +30,17 @@ void display(){
 
         /* ТРЕУГОЛЬНИК */
         //clrTringl.setColor3d();
-        tringl.drawTringl(clrTringl);
-        //clr.setColor3d();
-
+        //tringl.drawTringl(clrTringl);
     glFlush();
 
     FLAG = 1;
 }
-
+/* 
 void timer(int = 0){
     display();
     glutTimerFunc(10, timer, 0);
 }
-
+*/
 int main(int argc, char **argv){
     cout << "Load..." << endl;
 
@@ -55,7 +54,7 @@ int main(int argc, char **argv){
     glLoadIdentity();
     glOrtho(0.0, 100.0, 0.0, 100.0, -1.0, 1.0);
     glutDisplayFunc(display);
-    timer();
+    //timer();
     glutMainLoop();
 
     return 0;

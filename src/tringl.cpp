@@ -9,13 +9,11 @@
 
 TRINGL::TRINGL(){
     srnd;
-    FOR(0, 2){
+    lngth = 6;
+    FOR(0, 3){
         xCoords[_i] = 20 + rand() % 50;
         yCoords[_i] = 20 + rand() % 80;
     }
-    length = sin(20 + rand() % 60) * (xCoords[1] - xCoords[0]);
-    xCoords[2] = xCoords[0] + length;
-    yCoords[2] = yCoords[0] + length;
 
 }
 

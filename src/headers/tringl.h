@@ -6,9 +6,9 @@
 
 class TRINGL : public COLOR{
 protected:
+	int lngth;
     int xCoords[3];
     int yCoords[3];
-    int length;
 public:
     TRINGL();
     void drawTringl(COLOR);

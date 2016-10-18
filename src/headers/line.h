@@ -6,15 +6,14 @@
 
 class LINE : public COLOR{
 protected:
-    int lngth;
-    int x[2];
-    int y[2];
+    int x1,
+        x2;
+    int y1,
+        y2;
     int lineWidth;
 public:
     LINE();
     void setLine();
-    int getX();
-    int getY();
     void getLine();
     void drawLine(COLOR);
     void setLineWidth();

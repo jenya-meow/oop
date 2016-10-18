@@ -8,7 +8,6 @@
 
 class POINT : public COLOR{
 protected:
-	int lngth;
     int x;
     int y;
 public:
@@ -16,8 +15,6 @@ public:
     void setPointmp();
     void getPointmp();
     void drawPointmp(COLOR);
-    int getX();
-    int getY();
 };
 
 #endif // POINT_H

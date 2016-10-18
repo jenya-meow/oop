@@ -13,7 +13,5 @@ void COLOR::setColor3d(){
 }
 
 double COLOR::getColor3d(){
-    //FOR(0, 3)
-        //cout << "Color: " << endl << "\t" << color3i[_i] << ' ';
     return *color3d;
 }
